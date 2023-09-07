@@ -24,3 +24,11 @@ Here are some tasks I find relevant for the Red Hat EX280 Certification Exam
 - Manage OpenShift operators
 
 - Configure application security
+---
+
+## My Lab Environment
+My lab environment consists of a mix of Red Hat Coad Ready Containers (CRC) and the lab environment provided by EX280.  
+
+My CRC environment is on OpenShift 4.13, and I found that the procedure for removing the kubeadmin account differs from 4.12 in the DO280 lab environment.  
+
+Although all of these can be run on your CRC environment, the DO280 lab environment has some of the images I use to deploy, as well as NFS, set up ahead of time for testing Persistent Volume Claims (PVC) and some of the certs created for network security exercises. I may include certs/keys in this repo.
