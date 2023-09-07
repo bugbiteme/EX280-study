@@ -3,7 +3,9 @@ My study notes for Red Hat EX280 Certification (Openshift 4.12)
 
 ---
 
-Here are some tasks I find relevant for the Red Hat EX280 Certification Exam
+Here are some relevant tasks for the Red Hat EX280 Certification Exam.  
+So that you know, this project only covers some topics in the exam. I have included exercises
+found here for my study purposes.
 
 ## Categories Covered In EX280
 
