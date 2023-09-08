@@ -38,6 +38,8 @@ found here for my study purposes.
 - Configure application security  
  	[Challenge](./Configure-application-security.md)  
     [Solution](./Configure-application-security-SOLUTION.md) 
+
+- Quotas - Resource Limits - Scale - Autoscale
 ---
 
 ## My Lab Environment
@@ -46,5 +48,12 @@ My lab environment consists of a mix of Red Hat Code Ready Containers (CRC) and 
 My CRC environment is on OpenShift 4.13, and I found that the procedure for removing the kubeadmin account differs from 4.12 in the DO280 lab environment.  
 
 Although all of these can be run on your CRC environment, the DO280 lab environment has some of the images I use to deploy, as well as NFS, set up ahead of time for testing Persistent Volume Claims (PVC) and some of the certs created for network security exercises. I may include certs/keys in this repo.  
+
+---
+Topics not covered here that you should still study for  
+  
+- Install a Helm chard and deploy an app with it
+- associate key/value secret for application
+- LimitRanges
 
 
