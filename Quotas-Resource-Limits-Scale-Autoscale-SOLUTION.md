@@ -34,7 +34,7 @@ hello   Deployment/hello   <unknown>/75%   2         4         2          82s
 [] request memory 20Mi  
 [] limit cpu 100Mi  
 
-easyest way is to edit this via the web console from the deployment (`Actions->Edit Resource Limits`)  
+easiest way is to edit this via the web console from the deployment (`Actions->Edit Resource Limits`)  
 ![screenshot](img/image11.png)  
   
 (note: if app isnt running due to cpu request exeeded, lower request ammount)  
@@ -45,4 +45,10 @@ login as admin
 ```
 ❯ oc create quota project-quota --hard=cpu=3,memory=1Gi,configmaps=2 -n limits-scale 
 resourcequota/project-quota created
+
+❯ oc get quota                                                                      
+NAME            AGE   REQUEST                                          LIMIT
+project-quota   12m   configmaps: 2/2, cpu: 200m/3, memory: 40Mi/1Gi   
 ```
+
+  [back to main](./README.md) 

@@ -39,7 +39,9 @@ found here for my study purposes.
  	[Challenge](./Configure-application-security.md)  
     [Solution](./Configure-application-security-SOLUTION.md) 
 
-- Quotas - Resource Limits - Scale - Autoscale
+- Quotas - Resource Limits - Scale - Autoscale  
+ 	[Challenge](./Configure-application-security.md)  
+    [Solution](./Quotas-Resource-Limits-Scale-Autoscale-SOLUTION.md) 
 ---
 
 ## My Lab Environment
@@ -55,5 +57,6 @@ Topics not covered here that you should still study for
 - Install a Helm chard and deploy an app with it
 - associate key/value secret for application
 - LimitRanges
+- install openshift operators (via web console)
 
 
