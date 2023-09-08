@@ -18,9 +18,9 @@ found here for my study purposes.
 
 - Configure applications for reliability 
 
-- Manage authentication and authorization
- 	[Challenge](./Manage-authentication-and-authorization.md)
-    [Solution](./Manage-authentication-and-authorization-SOLUTION.md)
+- Manage authentication and authorization  
+ 	[Challenge](./Manage-authentication-and-authorization.md)  
+    [Solution](./Manage-authentication-and-authorization-SOLUTION.md)  
 
 - Configure network security
 
