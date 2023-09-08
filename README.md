@@ -54,7 +54,7 @@ Although all of these can be run on your CRC environment, the DO280 lab environm
 ---
 Topics not covered here that you should still study for  
   
-- Install a Helm chard and deploy an app with it
+- Install a Helm chart and deploy an app with it
 - associate key/value secret for application
 - LimitRanges
 - install openshift operators (via web console)
