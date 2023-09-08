@@ -41,7 +41,12 @@ found here for my study purposes.
 
 - Quotas - Resource Limits - Scale - Autoscale  
  	[Challenge](./Configure-application-security.md)  
-    [Solution](./Quotas-Resource-Limits-Scale-Autoscale-SOLUTION.md) 
+    [Solution](./Quotas-Resource-Limits-Scale-Autoscale-SOLUTION.md)   
+
+- cron jobs in OpenShift  
+ 	[Challenge](./cron-jobs-in-OpenShift.md)  
+    [Solution](./cron-jobs-in-OpenShift-SOLUTION.md)   
+
 ---
 
 ## My Lab Environment
@@ -58,5 +63,6 @@ Topics not covered here that you should still study for
 - associate key/value secret for application
 - LimitRanges
 - install openshift operators (via web console)
+
 
 
