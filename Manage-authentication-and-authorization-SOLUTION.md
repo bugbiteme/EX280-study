@@ -200,3 +200,6 @@ clusterrole.rbac.authorization.k8s.io/edit added: "leaders"
 - The `qa` group should be able to `view` the `front-end` project but not `edit` it
 
 `oc adm policy add-role-to-group view qa -n front-end`
+  
+  
+  [back to main](./README.md) 

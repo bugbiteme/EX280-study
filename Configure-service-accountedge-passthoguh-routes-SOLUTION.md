@@ -88,3 +88,7 @@ tls-secret   kubernetes.io/tls   2      15s
 route.route.openshift.io/nginx-https-v2 created
 ```  
 (note this currently doesn not work with this container image, but the steps are correct)
+
+  
+  
+  [back to main](./README.md) 

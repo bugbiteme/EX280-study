@@ -3,7 +3,9 @@
 ## Tasks
 ### Configure the cluster to use and HTPasswd identity provider  
 - create user accounts for: `admin`, `leader`, `developer` and `qa-engineer`
-- create and identiy provider called `cluster-users`
+- Create a secret called `cluster-users-secret` using the htpasswd credentails
+- create an identiy provider called `cluster-users` that reads the `cluster-users-secret` secret
+
 
 ### Account permissions
 - `admin` should be able to modify the cluster
@@ -27,3 +29,6 @@
 - The `leaders` group should have edit access to `back-end` and `app-db`
 - The `qa` grou shou;f be able to `view` the `front-end` project but not `edit` it
 
+  
+  
+  [back to main](./README.md) 
