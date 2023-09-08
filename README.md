@@ -32,7 +32,7 @@ found here for my study purposes.
 ---
 
 ## My Lab Environment
-My lab environment consists of a mix of Red Hat Code Ready Containers (CRC) and the lab environment provided by EX280.  
+My lab environment consists of a mix of Red Hat Code Ready Containers (CRC) and the lab environment provided by DO280R.  
 
 My CRC environment is on OpenShift 4.13, and I found that the procedure for removing the kubeadmin account differs from 4.12 in the DO280 lab environment.  
 
