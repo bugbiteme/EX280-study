@@ -18,10 +18,10 @@ nfs-storage (default)   k8s-sigs.io/nfs-subdir-external-provisioner   Delete    
 
 - It is easiet to do this with the GUI, otherwise you need to create a yaml file from scratch
 Storage->PersistentVolumeClaims
-[screenshot](img/image5.png)
+![screenshot](img/image5.png)
   
 Create PersistenVolumeClaim
-[screenshot](img/image6.png)
+![screenshot](img/image6.png)
 
 Fill out form with the following info
 ```
