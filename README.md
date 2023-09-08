@@ -9,7 +9,8 @@ found here for my study purposes.
 
 ## Categories Covered In EX280
 
-- Manage OpenShift Container Platform 
+- Manage OpenShift Container Platform   
+    [Solution](./Manage-OpenShift-Container-Platform.md) 
 
 
 - Deploy applications 
@@ -18,19 +19,25 @@ found here for my study purposes.
  	[Challenge](./Manage-storage-for-application-configuration-and-data.md)  
     [Solution](./Manage-storage-for-application-configuration-and-data-SOLUTION.md)  
 
-- Configure applications for reliability 
+- Configure applications for reliability  
+ 	[Challenge](./Configure-applications-for-reliability.md)  
+    [Solution](./Configure-applications-for-reliability-SOLUTION.md)
 
 - Manage authentication and authorization  
  	[Challenge](./Manage-authentication-and-authorization.md)  
     [Solution](./Manage-authentication-and-authorization-SOLUTION.md)  
 
-- Configure network security
+- Configure network security  
+ 	[Challenge](./Configure-service-account-edge-passthoguh-routes.md)  
+    [Solution](./Configure-service-accountedge-passthoguh-routes-SOLUTION.md) 
 
 - Enable developer self-service
 
 - Manage OpenShift operators
 
-- Configure application security
+- Configure application security  
+ 	[Challenge](./Configure-application-security.md)  
+    [Solution](./Configure-application-security-SOLUTION.md) 
 ---
 
 ## My Lab Environment
