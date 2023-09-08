@@ -31,3 +31,7 @@ spec:
 
 ```
 Once deployed, run the command oc get all to see the job in the project. Note you can change the schedule to see it run more often. `*/1 * * * *` will make it run every minute and look at the pod logs for the message.
+
+
+
+  [back to main](./README.md) 
