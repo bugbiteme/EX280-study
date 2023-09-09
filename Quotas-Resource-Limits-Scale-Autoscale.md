@@ -8,15 +8,7 @@
 ```
 
 - scale deployment to 2 pods
-```
-❯ oc scale deployment hello --replicas 2                                  
-deployment.apps/hello scaled
 
-❯ oc get pods                           
-NAME                     READY   STATUS    RESTARTS   AGE
-hello-76bfc67544-9tf98   1/1     Running   0          2m15s
-hello-76bfc67544-xzpkl   1/1     Running   0          7s
-```
 
 - Create an autoscale policy so that the deployment has a minimum 2 pods and a max of 4 pod and scales when cpu is over 75%  
 
