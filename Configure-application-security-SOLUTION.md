@@ -143,7 +143,7 @@ spec:
               deployment: sample-app
           namespaceSelector:
             matchLabels:
-              network: different-project
+              kubernetes.io/metadata.name: different-project (note this comes from the label found in the "describe project <project name> command)
   policyTypes:
     - Ingress
 ```
