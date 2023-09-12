@@ -42,7 +42,7 @@ found here for my study purposes.
 
 - Manage OpenShift operators
 
-- Configure application security  (source pod selector with deployment label and added label [name=value])
+- Configure application security  (source pod selector with deployment label and added label [name=value]) port access as well
  	[Challenge](./Configure-application-security.md)  
     [Solution](./Configure-application-security-SOLUTION.md) 
 
