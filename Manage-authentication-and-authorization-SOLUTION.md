@@ -103,7 +103,7 @@ log back in as admin, and you should be able to perform the following
 - `leader` should be able to create projects
 
 ```
-oc adm policy add-role-to-user self-provisioner leader -n openshift-config
+oc adm policy add-cluster-role-to-user self-provisioner leader
 clusterrole.rbac.authorization.k8s.io/self-provisioner added: "leader"
 ```
 
