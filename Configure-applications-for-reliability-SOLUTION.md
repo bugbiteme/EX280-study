@@ -104,5 +104,17 @@ This will put the app in an unhealthy state and it will redeploy in a few second
 Monitor with the `watch oc get pods` command
 
 
+command line opertions
+```
+$ oc set probe deployment probes --liveness \
+--get-url=http://:8080/healthz \
+--initial-delay-seconds=2 --timeout-seconds=2
+
+deployment.apps/probes probes updated
+
+$ oc set probe deployment probes --readiness \
+--get-url=http://:8080/ready \
+--initial-delay-seconds=2 --timeout-seconds=2
+```
 
   [back to main](./README.md) 
