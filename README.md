@@ -38,8 +38,10 @@ found here for my study purposes.
 
 - Enable developer self-service
   create a default project template with a limit range (max-min-default-request)
-  make that the default setting when someone creates a new project
-
+  make that the default setting when someone creates a new project   
+    [Challenge](./Enable-developer-self-service.md)  
+    [Solution](./Enable-developer-self-service-SOLUTION.md)  
+  
 - Manage OpenShift operators
 
 - Configure application security  (source pod selector with deployment label and added label [name=value]) port access as well
