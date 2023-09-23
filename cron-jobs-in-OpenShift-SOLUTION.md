@@ -1,6 +1,6 @@
 # cron jobs in OpenShift
 
-- Create a cron job `say-hello` in a project `cron-test` called that runs at 4:05 am every Sunday
+- Create a cron job `say-hello` in a project `cron-test` called that runs at 6:02 am every Sunday
 - cron job runs in a pod created from the image `quay.io/redhattraining/hello-world-nginx`
 - cron job runs the command `echo Hello from the OpenShift cluster`
   
@@ -15,7 +15,7 @@ metadata:
   name: say-hello
   namespace: cron-test
 spec:
-  schedule: '5 4 * * 0'
+  schedule: '2 6 * * 0'
   jobTemplate:
     spec:
       template:
@@ -31,6 +31,9 @@ spec:
 
 ```
 Once deployed, run the command oc get all to see the job in the project. Note you can change the schedule to see it run more often. `*/1 * * * *` will make it run every minute and look at the pod logs for the message.
+
+You can also add service accounts to a cronjob.  
+You can edit successful job run history in the yaml once you have created a job with the default values.
 
 
 
