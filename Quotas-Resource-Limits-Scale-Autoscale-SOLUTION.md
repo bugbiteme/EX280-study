@@ -32,12 +32,11 @@ hello   Deployment/hello   <unknown>/75%   2         4         2          82s
 [] request cpu 100m  
 [] limit cpu 200m  
 [] request memory 20Mi  
-[] limit cpu 100Mi  
+[] limit memory 100Mi  
 
-easiest way is to edit this via the web console from the deployment (`Actions->Edit Resource Limits`)  
-![screenshot](img/image11.png)  
+`> oc set resource deployment hello --limits=cpu=200m,memory=100Mi --requests=cpu=100m,memory=20Mi`  
   
-(note: if app isnt running due to cpu request exeeded, lower request ammount)  
+(note: if app isn't running due to cpu request exceeded, lower the request amount)  
   
 - Create quota: `cpu 3`, `memory 1G`, `configmaps 2` in the curent project
   
