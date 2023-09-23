@@ -90,6 +90,7 @@ hello
 ```
 
 ...
-  
+
+The above is very simple, but if only given a storageclass and nothing else, and dynamically provisioned PVs isn't available in your environment, look at information around it's FQDN/IP and mount point, and create a static pv with that information first, and get the PVC to point to it. Make sure your PVC spec includes the `storageClassName` tag.
   
   [back to main](./README.md) 
