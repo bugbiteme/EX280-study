@@ -63,31 +63,16 @@ oc expose service/nginx
 route.route.openshift.io/nginx exposed
 ```
 ## create an edge route (https)
-  
+
+- prereq: generate tls `.crt` and `.key` from inside the provided `certs` directory (run `openssl-comands.sh`)
 - create a secure route (edge)  
 ```
-❯ oc create route edge nginx-https --service nginx --hostname nginx-https.apps-crc.testing
+❯ oc create route edge nginx-https --service nginx --hostname nginx-https.apps-crc.testing --key <file>.key --cert <file>.crt
 route.route.openshift.io/nginx-https created
 ```  
 this route will be accessible with https://nginx-https.apps-crc.testing
+test with the `curl -s -k https://<URL>` command
 
-## create a tls passthrough route
-
-- create a tls secret
-```
-❯ oc create secret tls tls-secret --cert=certs/test-app3.crt --key=certs/test-app3.key
-secret/tls-secret created
-
-❯ oc get secret tls-secret                                                            
-NAME         TYPE                DATA   AGE
-tls-secret   kubernetes.io/tls   2      15s
-```
-- create passthrough route
-```
-❯ oc create route passthrough nginx-https-v2 --service nginx --port 8443 --hostname nginx-https-v2.apps-crc.testing
-route.route.openshift.io/nginx-https-v2 created
-```  
-(note this currently doesn not work with this container image, but the steps are correct)
 
   
   
