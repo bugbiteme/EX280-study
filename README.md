@@ -71,7 +71,8 @@ Topics not covered here that you should still study for
 - Install a Helm chart and deploy an app with it 
 - associate key/value secret for application
 - LimitRanges
-- install openshift operators 
+- install openshift operators
+- Create a default project template file and enable it for all users
 
 
 
