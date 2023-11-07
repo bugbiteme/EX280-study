@@ -6,21 +6,32 @@
 
 `$ oc new-app --name storage-test-app --image quay.io/redhattraining/hello-world-nginx`  
   
-- Check available storage classes in cluster
+- We will be using a given NFS storage filer (IP address-based)
+
+- Create a PV in the following format
 
 ```
-$ oc get storageclasses
-NAME                    PROVISIONER                                   RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
-lvms-vg1                topolvm.io                                    Delete          WaitForFirstConsumer   ...
-nfs-storage (default)   k8s-sigs.io/nfs-subdir-external-provisioner   Delete          Immediate   ...           
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv0001 
+spec:
+  capacity:
+    storage: 1Gi 
+  accessModes:
+  - ReadWriteOnce 
+  nfs: 
+    path: /
+    server: 172.17.0.2 
+  persistentVolumeReclaimPolicy: Retain 
 ```
-- We will be using nfs-storage
+[from documentation](https://docs.openshift.com/container-platform/4.10/storage/persistent_storage/persistent-storage-nfs.html). 
 
-- It is easiet to do this with the GUI, otherwise you need to create a yaml file from scratch
+- It is easy to do this with the GUI, otherwise, you need to create a yaml file from scratch
 Storage->PersistentVolumeClaims
 ![screenshot](img/image5.png)
   
-Create PersistenVolumeClaim
+Create PersistenVolumeClaim that binds to the created PV
 ![screenshot](img/image6.png)
 
 Fill out form with the following info
@@ -31,22 +42,26 @@ Size: 1Gi
 Volume mode: Filesystem
 ```
 
+Note that to ensure the PVC binds to the correct PV, you need to add the `volumeName` tag to the yaml
+
 yaml looks like this
 ```
-kind: PersistentVolumeClaim
 apiVersion: v1
+kind: PersistentVolumeClaim
 metadata:
   name: storage-test-pvc
-  namespace: storage-test
 spec:
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteOnce 
   resources:
     requests:
-      storage: 1Gi
-  storageClassName: nfs-storage
-  volumeMode: Filesystem
+      storage: 1Gi 
+  volumeName: pv0001  <--------- VERY IMPORTANT!!!!!
+  storageClassName: ""
 ```
+[from documentation](https://docs.openshift.com/container-platform/4.10/storage/persistent_storage/persistent-storage-nfs.html). 
+
+
 - add PVC to storage-test-app deployment
 (Using GUI)  
   
